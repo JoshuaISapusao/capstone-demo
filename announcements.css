@@ -5,14 +5,13 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: auto;
   font-family: 'Montserrat', sans-serif; 
 }
 body {
   display: flex;
   flex-wrap: wrap; 
-  padding: 1px;
-  gap: 15px;
+  padding: 0.05vh;
 }
 
 /* ----------------------------- */
@@ -21,18 +20,10 @@ body {
 
 .web-header {
   flex-basis: 102%;
-  margin: -1px -1px 0 -1px;
-  width: calc(100% + 30px);
-  gap:0 
+  margin: -0.1vh -0.1vh 0 -0.1vh;
+  width: calc(100% + 2vw);
+  gap: 0;
 } 
-body {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 0;        
-  column-gap: 15px;  
-  padding: 0;        
-  margin: 0;        
-}
 
 .web-header {
   flex-basis: 100%;  
@@ -42,12 +33,12 @@ body {
 
 .yellow {
   background-color: #F8C041;
-  padding: 10px 30px;   
+  padding: 1vh 3vw;   
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  height: 120px;
+  height: 13vh;
   flex-wrap: wrap;
   margin: 0;            
 }
@@ -56,32 +47,32 @@ body {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 15px;
-  font-size:small;
+  gap: 1vw;
+  font-size: small;
   flex-wrap: wrap;
-    margin: 0;
+  margin: 0;
 }
+
 .mchl {
-    margin: 0;
-  width: 85px;
-  height: 85px;
+  margin: 0;
+  width: 5vw;
+  height: 5vw;
   border-radius: 50%;
-  object-fit:cover;
+  object-fit: cover;
   background-color: white;
 }
 .org-name {
-    margin: 0;
-
+  margin: 0;
   font-size: 1.3em;
   color: #004080;
 }
 .bell-icon {
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
 }
 .profile-image {
-  width: 70px;
-  height: 70px;
+  width: 4.5vw;
+  height: 4.5vw;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -93,197 +84,204 @@ body {
   color: #000000;
   justify-content: center;
 }
-.user-name {
-  font-weight: bold;
-  font-size:small;
-}
-.user-role {
+.user-name, .user-role {
   font-size: small;
-  font-size:small;
   font-weight: bold;
 }
-  /* ----------------------------- */
-  /* Sidebar */
-  /* ----------------------------- */
-  /* ----------------------------- */
-  
+
+/* ----------------------------- */
+/* Sidebar */
+/* ----------------------------- */
 .sidebar {  
-  flex: 1 1 250px;
+  flex: 1 1 20vw;
   font-weight: bold;
   margin: 0;  
   gap: 0;
-  
 }
-  .sidebar-container ul {
-    list-style: none;
-    padding: 0;
-    margin-left: 5%;
-    font-size: large;
-    text-align:justify;
-    flex-grow: 1;
-    align-items:end;
-  }
-  .sidebar-container ul li {
-    margin-bottom: 25px;
-  }
-  .sidebar-container ul li a {
-    display: block;
-    text-decoration: none;
-    color:#004080;
-    padding: 10px 15px;
-    border-radius: 8px;
-  }
-  .sidebar-container ul li a:hover,
-  .sidebar-container ul li a.active { /* <-- This selector handles the active state */
-    background-color:#F8C041;
-    color: rgb(255, 255, 255);
-    width: 80%;
-  }
-  .sidebar-container .logout-link {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: small;
-    margin-top: auto;
-  }
-  .icon-yellow {
+.sidebar-container ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 5%;
+  font-size: large;
+  text-align: justify;
+  flex-grow: 1;
+  align-items: end;
+  white-space: nowrap;
+}
+.sidebar-container ul li {
+  margin-bottom: 3vh;
+}
+.sidebar-container ul li a {
+  display: block;
+  text-decoration: none;
+  color: #004080;
+  padding: 1vh 1vw;
+  border-radius: 1vw;
+}
+.sidebar-container ul li a:hover,
+.sidebar-container ul li a.active {
+  background-color: #F8C041;
+  color: white;
+  width: 80%;
+}
+.sidebar-container .logout-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: small;
+  margin-top: 30%;
+  display: flex;
+  justify-content: center;
+}
 
-      color: #F59329; /* Or use a hex code like #FFFF00 for a specific shade of yellow */
+.icon-yellow {
+  color: #F59329;
+}
 
-    }
-  /* ----------------------------- */
-  /* Logout Section Container */
-  /* ----------------------------- */
-  .sidebar-container .logout-link {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size:small;
-    margin-top: 70%;
-    display: flex;
-    justify-content: center;
-  }
-  /* ----------------------------- */
-  /* Logout Link Styling: The Base Button (RED) */
-  /* ----------------------------- */
+/* Logout Link Button */
+.sidebar-container .logout-link li a {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #E63D4D;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh 0;
+  margin-left: -50%;
+  border-radius: 1vw;
+  width: 200%;
+}
+.sidebar-container .logout-link li a:hover {
+  background-color: #CC2C3C;
+  color: white;
+  transform: scale(1.02);
+  width: 200%;
+}
 
-  .sidebar-container .logout-link li a {
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    background-color: #E63D4D;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    margin-left: -50%;
-    border-radius: 8px;
-    width: 200%;
-  }
-  .sidebar-container .logout-link li a:hover {
-    background-color: #CC2C3C;
-    color: white;
-    transform: scale(1.02);
-    width: 200%;
-  }
-  .main-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 3 1 60%;
-    min-width: 300px;
-  }
-  .content {
-    font-size: x-large;
-    color: #004080;
-  }
-  .main-wrapper{
-    gap: 0;
-    margin: 0;
-  }
-/* ----------------------------- */
-/* Main Content Wrapper */
-/* ----------------------------- */
 .main-wrapper {
   display: flex;
   flex-direction: column;
   flex: 3 1 60%;
-  min-width: 300px;
+  min-width: 25vw;
+  gap: 0;
+  margin: 0;
 }
-
-/* ----------------------------- */
-/* Announcement Section */
-/* ----------------------------- */
 .content {
-  font-size: x-large;
+  font-size:large;
   color: #004080;
 }
 
+/* ----------------------------- */
+/* Media Queries */
+/* ----------------------------- */
+@media (max-width: 90vw) {
+  .sidebar, .main-wrapper {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .web-header {
+    margin: -2vh;
+    width: calc(100% + 4vw);
+  }
+}
+
+@media (max-width: 60vw) {
+  .calendar-dates div {
+    flex-basis: calc((100% / 3) - (1vw * 2 / 3));
+  }
+  .header-left, .header-right {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .yellow {
+    height: auto;
+    padding: 2vh;
+  }
+}
+
+.sidebar-container ul li a.active {
+  background-color: #ffffff;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5vw;
+}
+/* ----------------------------- */
+/* Announcement Section */
+/* ----------------------------- */
+
 .announcement-first-item {
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1);
-  width: 75%;
+  border-radius: 1.04vw;
+  box-shadow: 0.05vw 0.05vw 0.63vw 0.47vw rgba(0, 0, 0, 0.1);
+  width: 70%;
   margin-right: auto;
-  padding: 20px;
+  padding: 1.04vw;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 50px;
-  margin-bottom: 20px;
+  gap: 2.6vw;
+  margin-bottom: 1.04vw;
 }
+
 .announcement-second-item {
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1);
-  width: 75%;
+  border-radius: 1.04vw;
+  box-shadow: 0.05vw 0.05vw 0.63vw 0.47vw rgba(0, 0, 0, 0.1);
+  width: 70%;
   margin-right: auto;
-  padding: 20px;
+  padding: 1.04vw;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 1.04vw;
+  margin-bottom: 1.04vw;
 }
 
 .announcement-third-item {
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1);
-  width: 75%;
+  border-radius: 1.04vw;
+  box-shadow: 0.05vw 0.05vw 0.63vw 0.47vw rgba(0, 0, 0, 0.1);
+  width: 70%;
   margin-right: auto;
-  padding: 20px;
+  padding: 1.04vw;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
-justify-content: center;
-}
-.announcement-container{
-background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1);
-  width: 75%;
-  margin-right: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 1.04vw;
+  margin-bottom: 1.04vw;
+  justify-content: center;
 }
 
+.announcement-container {
+  background-color: #fff;
+  border-radius: 1.04vw;
+  box-shadow: 0.05vw 0.05vw 0.63vw 0.47vw rgba(0, 0, 0, 0.1);
+  width: 75%;
+  margin-right: auto;
+  padding: 1.04vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.04vw;
+  margin-bottom: 1.04vw;
+}
+
+/* ----------------------------- */
+/* Add Button */
+/* ----------------------------- */
+
 .add-announcement-button {
-  font-size: 24px;
+  font-size: 1.25vw;
   font-weight: bold;
-  width: 40px;
-  height: 40px;
+  width: 2.08vw;
+  height: 2.08vw;
   border-radius: 50%;
   border: none;
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 0.10vw 0.31vw rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
 
@@ -291,11 +289,15 @@ background-color: #fff;
   background-color: #0056b3;
 }
 
+/* ----------------------------- */
+/* Badge + Content Layout */
+/* ----------------------------- */
+
 .badge-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 0.52vw;
   flex-shrink: 0;
 }
 
@@ -307,14 +309,14 @@ background-color: #fff;
 }
 
 .announcement-item:last-child .date {
-  padding: 10px 0;
+  padding: 0.52vw 0;
 }
 
 .badge {
   font-size: 0.75rem;
   font-weight: bold;
-  padding: 4px 12px;
-  border-radius: 12px;
+  padding: 0.21vw 0.63vw;
+  border-radius: 0.63vw;
   text-transform: uppercase;
   color: #fff;
   background-color: #F59329;
@@ -328,7 +330,7 @@ background-color: #fff;
 .content-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.52vw;
 }
 
 .title {
@@ -342,7 +344,6 @@ background-color: #fff;
   font-size: 1rem;
   color: #666;
   line-height: 1.5;
-  
 }
 
 /* ----------------------------- */
