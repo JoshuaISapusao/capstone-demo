@@ -6,27 +6,26 @@
   <title>MCHL Login Page </title>
   <link rel="stylesheet" href="LoginStyle.css" />
 </head>
-<body>
-  <main class="container">
-    <div class="yellow">
-      <form action="Homepage.html" method="POST">
-        <label for="name">ID:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="password" required><br><br>
-        <div class="form-actions">
-          <button type="submit" class="login-btn">Log in</button>
-            <a href="#" class="forgot">Forgot Password?</a>
-        </div>
-      </form>
+<main class="container">
+  <div class="yellow">
+    <img src="Photo/mchl logo.png" alt="Logo" class="mchl" />
+    <form action="Homepage.html" method="POST">
+      <label for="name">ID:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+   <div class="form-actions">
+  <button type="submit" class="login-btn">SIGN IN</button>
+  <div class="link-group">
+    <a href="#" class="forgot">Forgot Username / Password?</a>
   </div>
-  <div class="white">
-    <img src="Photo/mchl logo.png" alt="Logo" class="mchl">
-    <section class="Montessori">
-          <h1>Montessori Children's House of Learning Inc.</h1>
-      </section>
+</div>
+
+    </form>
   </div>
+  <div class="white"></div> <!-- empty but keeps the background split -->
 </main>
+
 <script>
   document.querySelector('.login-btn').addEventListener('click', function(e) {
     e.preventDefault(); // prevent form submission
