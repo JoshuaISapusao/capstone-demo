@@ -74,7 +74,7 @@ input[type="password"] {
 
 /* === Button === */
 .login-btn {
-  background-color: #004080;
+  background-color:  #F8C041;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -128,3 +128,4 @@ input[type="password"] {
     max-width: 150px;
   }
 }
+
