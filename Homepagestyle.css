@@ -179,7 +179,7 @@ body {
   background-color: #fff;
   border-radius: 2vw;
   box-shadow: 0.1vw 0.1vw 1vw 0.8vw rgba(0, 0, 0, 0.1);
-  width: 60%; 
+  width: 70%; 
   margin-right: auto; 
   padding: 4vh;
   box-sizing: border-box;
@@ -358,3 +358,4 @@ body {
   font-weight: bold;
   border-radius: 0.5vw;
 }
+
