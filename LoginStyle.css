@@ -21,7 +21,6 @@ body {
   box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1); /* <-- added shadow */
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #F8C041;;
 }
 
 /* === Yellow Section (Logo + Form) === */
