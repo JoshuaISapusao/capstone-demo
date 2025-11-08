@@ -7,7 +7,7 @@
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background: linear-gradient(to right, rgb(247, 245, 245) 50%, #F8C041 50%);
+  background: linear-gradient(to right, rgb(247, 245, 245) 50%);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,9 +18,10 @@ body {
 .container {
   width: 90%;
   max-width: 600px;
-  box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1); /* <-- added shadow */
   border-radius: 12px;
   overflow: hidden;
+  border: 1px solid #F8C041;;
 }
 
 /* === Yellow Section (Logo + Form) === */
