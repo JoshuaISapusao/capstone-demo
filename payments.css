@@ -5,33 +5,25 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: auto;
   font-family: 'Montserrat', sans-serif; 
 }
 body {
   display: flex;
   flex-wrap: wrap; 
-  padding: 1px;
-  gap: 15px;
+  padding: 0.05vh;
 }
+
 /* ----------------------------- */
 /* Header */
 /* ----------------------------- */
 
 .web-header {
   flex-basis: 102%;
-  margin: -1px -1px 0 -1px;
-  width: calc(100% + 30px);
-  gap:0 
+  margin: -0.1vh -0.1vh 0 -0.1vh;
+  width: calc(100% + 2vw);
+  gap: 0;
 } 
-body {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 0;        
-  column-gap: 15px;  
-  padding: 0;        
-  margin: 0;        
-}
 
 .web-header {
   flex-basis: 100%;  
@@ -41,12 +33,12 @@ body {
 
 .yellow {
   background-color: #F8C041;
-  padding: 10px 30px;   
+  padding: 1vh 3vw;   
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  height: 120px;
+  height: 13vh;
   flex-wrap: wrap;
   margin: 0;            
 }
@@ -55,35 +47,32 @@ body {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 15px;
-  font-size:small;
+  gap: 1vw;
+  font-size: small;
   flex-wrap: wrap;
-    margin: 0;
-
+  margin: 0;
 }
 
 .mchl {
-    margin: 0;
-
-  width: 85px;
-  height: 85px;
+  margin: 0;
+  width: 5vw;
+  height: 5vw;
   border-radius: 50%;
-  object-fit:cover;
+  object-fit: cover;
   background-color: white;
 }
 .org-name {
-    margin: 0;
-
+  margin: 0;
   font-size: 1.3em;
   color: #004080;
 }
 .bell-icon {
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
 }
 .profile-image {
-  width: 70px;
-  height: 70px;
+  width: 4.5vw;
+  height: 4.5vw;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -95,138 +84,120 @@ body {
   color: #000000;
   justify-content: center;
 }
-.user-name {
-  font-weight: bold;
-  font-size:small;
-}
-.user-role {
+.user-name, .user-role {
   font-size: small;
-  font-size:small;
   font-weight: bold;
 }
-  /* ----------------------------- */
-  /* Sidebar */
-  /* ----------------------------- */
-  /* ----------------------------- */
-  
+
+/* ----------------------------- */
+/* Sidebar */
+/* ----------------------------- */
 .sidebar {  
-  flex: 1 1 250px;
+  flex: 1 1 20vw;
   font-weight: bold;
   margin: 0;  
   gap: 0;
-  
 }
-  .sidebar-container ul {
-    list-style: none;
-    padding: 0;
-    margin-left: 5%;
-    font-size: large;
-    text-align:justify;
-    flex-grow: 1;
-    align-items:end;
-  }
-  .sidebar-container ul li {
-    margin-bottom: 25px;
-  }
-  .sidebar-container ul li a {
-    display: block;
-    text-decoration: none;
-    color:#004080;
-    padding: 10px 15px;
-    border-radius: 8px;
-  }
-  .sidebar-container ul li a:hover,
-  .sidebar-container ul li a.active { /* <-- This selector handles the active state */
-    background-color:#F8C041;
-    color: rgb(255, 255, 255);
-    width: 80%;
-  }
-  .sidebar-container .logout-link {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: small;
-    margin-top: auto;
-  }
-  .icon-yellow {
-
-      color: #F59329; /* Or use a hex code like #FFFF00 for a specific shade of yellow */
-
-    }
-  /* ----------------------------- */
-  /* Logout Section Container */
-  /* ----------------------------- */
-  .sidebar-container .logout-link {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size:small;
-    margin-top: 70%;
-    display: flex;
-    justify-content: center;
-  }
-  /* ----------------------------- */
-  /* Logout Link Styling: The Base Button (RED) */
-  /* ----------------------------- */
-
-  .sidebar-container .logout-link li a {
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    background-color: #E63D4D;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    margin-left: -50%;
-    border-radius: 8px;
-    width: 200%;
-  }
-  .sidebar-container .logout-link li a:hover {
-    background-color: #CC2C3C;
-    color: white;
-    transform: scale(1.02);
-    width: 200%;
-  }
-  .main-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 3 1 60%;
-    min-width: 300px;
-  }
-  .content {
-    font-size: x-large;
-    color: #004080;
-  }
-  .main-wrapper{
-    gap: 0;
-    margin: 0;
-  }
-    /* ----------------------------- */
-  /* Main */
-  /* ----------------------------- */
-.container {
-  font-size: medium;
+.sidebar-container ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 5%;
+  font-size: large;
+  text-align: justify;
+  flex-grow: 1;
+  align-items: end;
+  white-space: nowrap;
+}
+.sidebar-container ul li {
+  margin-bottom: 3vh;
+}
+.sidebar-container ul li a {
+  display: block;
+  text-decoration: none;
   color: #004080;
-  display: flex;              /* ✅ enables horizontal layout */
-  gap: 80px;                  /* ✅ spacing between items */
-  justify-content: baseline;   /* ✅ centers the row of items */
-  flex-wrap: wrap;           /* ✅ allows wrapping on smaller screens */
+  padding: 1vh 1vw;
+  border-radius: 1vw;
 }
+.sidebar-container ul li a:hover,
+.sidebar-container ul li a.active {
+  background-color: #F8C041;
+  color: white;
+  width: 80%;
+}
+.sidebar-container .logout-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: small;
+  margin-top: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-yellow {
+  color: #F59329;
+}
+
+/* Logout Link Button */
+.sidebar-container .logout-link li a {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #E63D4D;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh 0;
+  margin-left: -50%;
+  border-radius: 1vw;
+  width: 200%;
+}
+.sidebar-container .logout-link li a:hover {
+  background-color: #CC2C3C;
+  color: white;
+  transform: scale(1.02);
+  width: 200%;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 3 1 60%;
+  min-width: 25vw;
+  gap: 0;
+  margin: 0;
+}
+.content {
+  font-size:large;
+  color: #004080;
+}
+/* ----------------------------- */
+/* Main */
+/* ----------------------------- */
+.container {
+  font-size: 2vh;
+  color: #004080;
+  display: flex;                 /* ✅ horizontal layout */
+  gap: 5vw;                      /* ✅ spacing between items */
+  justify-content: baseline;     /* ✅ centers the row of items */
+  flex-wrap: wrap;               /* ✅ wraps on smaller screens */
+}
+
+/* Card items */
 .first-item,
 .second-item,
 .third-item {
- background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 1px 1px 12px 9px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  width: 400px;
-  height: 200px;
+  background-color: #fff;
+  border-radius: 1.04vw;       /* 20px → 1.04vw */
+  box-shadow: 0.1vw 0.1vw 1vh 0.8vh rgba(0, 0, 0, 0.1);
+  padding: 3vh;
+  width: 20vw;              /* 400px → 20.83vw */
+  height: 10.42vw;             /* 200px → 10.42vw */
   display: flex;
   flex-direction: column;
-  align-items: center;        /* ✅ centers horizontally */
-  justify-content: center;   /* ✅ centers vertically */
-  text-align: center;        /* ✅ centers text inside */
+  align-items: center;           /* ✅ centers horizontally */
+  justify-content: center;       /* ✅ centers vertically */
+  text-align: center;            /* ✅ centers text */
 }
 
 .view-more {
@@ -234,8 +205,8 @@ body {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.52vw 1.04vw;      /* 10px 20px → 0.52vw 1.04vw */
+  border-radius: 0.26vw;       /* 5px → 0.26vw */
   text-decoration: none;
   font-size: medium;
   transition: background-color 0.3s ease;
