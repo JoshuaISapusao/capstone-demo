@@ -208,35 +208,36 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
-
 .calendar-days {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;                          /* switch from flex to grid */
+  grid-template-columns: repeat(7, 1fr);  /* force 7 equal columns */
   text-align: center;
   font-weight: bold;
   color: #004080;
   margin-bottom: 1vh;
 }
+
 .calendar-days > div {
-  flex: 1 1 14.28%;
-  min-width: 3vw;
+  padding: 0.5vh 0;                       /* keep spacing consistent */
 }
+
 .calendar-dates {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* force 7 equal columns */
   padding: 1vh 0;
   font-size: larger;
   min-height: 40vh;
+  gap: 0.5vw; /* optional spacing between cells */
 }
+
 .calendar-dates div {
   padding: 1.5vh;
   border-radius: 1vw;
   font-size: 1.3vw;
   background-color: #f9f9f9;
   transition: background-color 0.8s;
-  flex-basis: calc((100% / 7) - (1vw * 6 / 7));
-  flex-grow: 1;
 }
+
 .calendar-dates div:hover {
   background-color: #F8C041;
   color: white;
