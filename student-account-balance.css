@@ -112,7 +112,8 @@ body {
   margin-bottom: 3vh;
 }
 .sidebar-container ul li a {
-  display: block;
+    gap: 15px;
+  display: inline-flex;
   text-decoration: none;
   color: #004080;
   padding: 1vh 1vw;
@@ -332,3 +333,4 @@ button[onclick*="removeItem"] {
   font-size: 1.25vw;               /* x-large → ~1.25vw */
   color: #004080;
 }
+
