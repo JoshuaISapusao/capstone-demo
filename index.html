@@ -10,11 +10,6 @@
 <main class="container">
   <div class="yellow">
     <img src="Photo/mchl logo.png" alt="Logo" class="mchl" />
-
-    <p class="disclaimer">
-      This system is for educational purposes only. The school logo is used strictly for an academic project, and the researchers are the proponents of this study.
-    </p>
-
     <form action="Homepage.html" method="POST">
       <label for="name">ID:</label><br>
       <input type="text" id="name" name="name" required><br><br>
@@ -26,11 +21,18 @@
         <button type="submit" class="login-btn">SIGN IN</button>
         <div class="link-group">
           <a href="" class="forgot">Forgot Username / Password?</a>
+          <p class="disclaimer warning">
+  ⚠️ <strong>WARNING:</strong> This system is for <strong>EDUCATIONAL PURPOSES ONLY</strong>. 
+  The school logo is used strictly for an <strong>academic project</strong>. 
+  The researchers are the official proponents of this study.
+</p>
+
         </div>
       </div>
     </form>
   </div>
 </main>
+
   
 <script>
   document.querySelector('.login-btn').addEventListener('click', function(e) {
@@ -47,5 +49,6 @@
 </script>
 </body>
 </html>
+
 
 
