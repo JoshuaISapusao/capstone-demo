@@ -128,12 +128,19 @@ input[type="password"] {
     max-width: 150px;
   }
 }
-.disclaimer {
-  font-size: 12px;
-  color: #555;
+.warning {
+  font-weight: bold;
+  color: #b00020; /* warning red */
+  background-color: #ffe6e6;
+  border: 1px solid #b00020;
+  padding: 10px;
+  margin: 12px 20px;
   text-align: center;
-  margin: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
 }
+
+
 
 
 
