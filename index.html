@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MCHL Login Page </title>
+  <title>MCHL Login Page</title>
   <link rel="stylesheet" href="LoginStyle.css" />
 </head>
+
 <main class="container">
   <div class="yellow">
     <img src="Photo/mchl logo.png" alt="Logo" class="mchl" />
+
+    <p class="disclaimer">
+      This system is for educational purposes only. The school logo is used strictly for an academic project, and the researchers are the proponents of this study.
+    </p>
+
     <form action="Homepage.html" method="POST">
       <label for="name">ID:</label><br>
       <input type="text" id="name" name="name" required><br><br>
+
       <label for="password">Password:</label><br>
       <input type="password" id="password" name="password" required><br><br>
-   <div class="form-actions">
-  <button type="submit" class="login-btn">SIGN IN</button>
-  <div class="link-group">
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="forgot">Forgot Username / Password?</a>
-  </div>
-</div>
 
+      <div class="form-actions">
+        <button type="submit" class="login-btn">SIGN IN</button>
+        <div class="link-group">
+          <a href="" class="forgot">Forgot Username / Password?</a>
+        </div>
+      </div>
     </form>
   </div>
-  <div class="white"></div> <!-- empty but keeps the background split -->
 </main>
-
+  
 <script>
   document.querySelector('.login-btn').addEventListener('click', function(e) {
     e.preventDefault(); // prevent form submission
@@ -41,4 +47,5 @@
 </script>
 </body>
 </html>
+
 
